@@ -1,0 +1,17 @@
+parameter,value,description
+input_dir,./data,Directory containing structure files
+outdir_bethe,./results/bethe_lam8,Output directory for Bethe baseline
+outdir_graph,./results/graph_delta25_omega2,Output directory for graph-aware run
+contact_cutoff,8.0,Contact cutoff in Angstrom
+plddt_threshold,70.0,Residue confidence/B-factor threshold
+min_seq_sep,2,Retain contacts only when sequence separation is greater than this value
+lambda_min_bethe,0.1,Minimum lambda for Bethe scan
+lambda_max_bethe,8.0,Maximum lambda for Bethe scan
+lambda_points_bethe,300,Number of lambda points for Bethe scan
+lambda_min_graph,0.1,Minimum lambda for graph scan
+lambda_max_graph,20.0,Maximum lambda for graph scan
+lambda_points_graph,400,Number of lambda points for graph scan
+delta_graph,2.5,Local penalty for graph-aware model
+omega_unfolded_graph,2.0,Unfolded degeneracy parameter for graph-aware model
+sat_threshold,0.90,Operational high-occupancy threshold
+n_cpu,1,Reserved CPU worker count; default reproducible mode is serial
